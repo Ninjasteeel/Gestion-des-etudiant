@@ -1,5 +1,5 @@
 package pack1;
-
+import java.util.Collections;
 public class main {
 
 	public static void main(String[] args) {
@@ -7,6 +7,20 @@ public class main {
 		e1.setNote(15);
 		e3.setNote(16);
 		e2.setNote(12);
+		ListEtudiant	mesEtudiants=new ListEtudiant();
+		
+		mesEtudiants.add(e1);
+			mesEtudiants.add(e2);
+			mesEtudiants.add(e3);
+			System.out.println(mesEtudiants);
+			Collections.sort(mesEtudiants);
+			System.out.println(mesEtudiants);
+		
+		
+		
+		
+		
+		
 	}
 
 }
