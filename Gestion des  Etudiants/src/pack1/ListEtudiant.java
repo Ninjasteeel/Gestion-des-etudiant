@@ -1,7 +1,7 @@
 package pack1;
 import java.util.ArrayList;
-extends ArrayList<Etudiant>
-public class ListEtudiant {
+
+public class ListEtudiant extends ArrayList<Etudiant> {
 	public boolean add(Etudiant e) {
 		if(this.contains(e)) {
 			set(indexOf(e),e);return false;
