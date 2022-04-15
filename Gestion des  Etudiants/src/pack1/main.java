@@ -15,7 +15,20 @@ public class main {
 			System.out.println(mesEtudiants);
 			Collections.sort(mesEtudiants);
 			System.out.println(mesEtudiants);
-		
+			condition c=new condition() {
+
+				@Override
+				public boolean	estVrai(Etudiant e) {
+	if(e.getNote()>=13)
+	{return true;}return false;	}
+				
+
+			};
+			
+			
+			mesEtudiants=mesEtudiants.filtrer( c) 	;
+			System.out.println(mesEtudiants);
+
 		
 		
 		
